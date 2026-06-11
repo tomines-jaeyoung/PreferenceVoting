@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PreferenceVoting">
         <activity
+            android:name=".SplashActivity"
+            android:exported="false" />
+        <activity
             android:name=".ResultActivty"
             android:exported="false" />
         <activity

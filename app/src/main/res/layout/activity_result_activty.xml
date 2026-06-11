@@ -10,19 +10,54 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:gravity="center">
+        android:gravity="center"
+        android:padding="8dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="20sp"
             android:textStyle="bold"
-            android:text="좋아하는 아이돌 투표 결과" />
+            android:text="투표 결과" />
 
     </LinearLayout>
+
+    <!-- 가장 많은 표를 받은 그림의 제목 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="제목" />
+
+    </LinearLayout>
+
+    <!-- 가장 많은 표를 받은 그림 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/imageResult"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter" />
+
+    </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -42,7 +77,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            style= "?android:attr/ratingBarStyleIndicator"/>
+            android:isIndicator="true"
+            style="?android:attr/ratingBarStyleSmall"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -63,7 +99,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            style= "?android:attr/ratingBarStyleIndicator"/>
+            android:isIndicator="true"
+            style="?android:attr/ratingBarStyleSmall"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -84,7 +121,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            style= "?android:attr/ratingBarStyleIndicator"/>
+            android:isIndicator="true"
+            style="?android:attr/ratingBarStyleSmall"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -105,7 +143,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            style= "?android:attr/ratingBarStyleIndicator"/>
+            android:isIndicator="true"
+            style="?android:attr/ratingBarStyleSmall"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -126,7 +165,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            style= "?android:attr/ratingBarStyleIndicator"/>
+            android:isIndicator="true"
+            style="?android:attr/ratingBarStyleSmall"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -147,7 +187,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            style= "?android:attr/ratingBarStyleIndicator"/>
+            android:isIndicator="true"
+            style="?android:attr/ratingBarStyleSmall"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -168,7 +209,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            style= "?android:attr/ratingBarStyleIndicator"/>
+            android:isIndicator="true"
+            style="?android:attr/ratingBarStyleSmall"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -189,7 +231,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            style= "?android:attr/ratingBarStyleIndicator"/>
+            android:isIndicator="true"
+            style="?android:attr/ratingBarStyleSmall"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -210,7 +253,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            style= "?android:attr/ratingBarStyleIndicator"/>
+            android:isIndicator="true"
+            style="?android:attr/ratingBarStyleSmall"/>
     </LinearLayout>
     <Button
         android:id="@+id/btn_back"
